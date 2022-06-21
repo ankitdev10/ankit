@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+ 
+}
+
+body{
+  background-color: black;
+  color: white;
+  
+}
+
+.logo{
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin: -5px;
+}
+
+
+.navbar {
+
+  height: 75px;
+  width: 100vw;
+  text-align: right;
+  background-color: rgb(58, 48, 48);
+}
+
+.menu{
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: none;
+  
+}
+
+.navbar ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 25px 80px 0 0;
+
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  padding: 5px 13px;
+  color: White;
+  transition: 0.15s ease-in-out;
+  font-size: 1.2rem;
+ 
+ 
+}
+
+.navbar ul li a:hover{
+ 
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+
+.introduction{
+  
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile{
+  margin-left: auto;
+ 
+}
+
+.profile-img{
+  width: 350px;
+}
+
+.intro{
+  position: relative;
+  left: 1000px; 
+} 
+
+h3, h6{
+  font-size: 2.1rem;
+  line-height: 1.5;
+}
+
+span{
+  color: orangered;
+}
+
+
+.about{
+margin-top: 50px;
+display: flex;
+color: white;
+}
+
+/* aboutinfo is an item of about container */
+.about-info{
+display: flex;
+flex-direction: column;
+flex-basis: 50%;
+margin-left: 100px;
+
+}
+.about-info h2 {
+  text-align: center;
+  color: orangered;
+  font-size: 2rem;
+}
+
+.about-info p{
+  width: px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+
+/* skill is item of about container */
+.skill{
+display: flex;
+flex-direction: column;
+flex-basis: 50%;
+margin-left: 100px;
+}
+
+.skill h2{
+color: orangered;
+text-align: center;
+font-size: 2rem;
+}
+
+.chart{
+width: 500px;
+height: 20px;
+border: 2px solid white;
+border-radius: 50px;
+margin: 25px 0;
+margin-left: 100px;
+}
+
+#html{
+background: linear-gradient(to right, blue 80%, white 20%);
+}
+
+#css{
+background: linear-gradient(to right, blue 60%, white 20%);;
+}
+
+#python{
+background: linear-gradient(to right, blue 40%, white 20%);;
+}
+
+
+.skill h3{
+position: relative;
+font-size: 1.3rem;
+top: -140px;
+margin-top: 14px;
+}
+
+.contact{
+
+margin-top: 100px;
+display: flex;
+flex-direction: column;
+
+
+}
+
+.contact h3{
+text-align: center;
+color: orangered;
+
+}
+
+
+.socials{
+background: rgb(58, 48, 48);
+margin-top: 20px;
+display: flex;
+justify-content: center;
+margin-left: 500px;
+width: 500px;
+margin-bottom: 20px;
+border-radius: 8px;
+
+
+}
+.socials img{
+width: 50px;
+padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 500px){
+  .navbar{
+    width: 100vw;  
+    height: 150px;
+  }
+
+  .navbar ul li{
+    margin-top: 0 ;
+    display: block;
+    text-align: center;
+    margin-left: 100px; 
+    padding-top: 15px;
+  }
+  .intro{
+      position: relative;
+      left: 15px;
+      width: 1000px;
+       
+  }   
+  .intro h3, h6{
+      font-size: 1.5rem;
+      margin-left: 50px;         
+  }
+  .profile{
+    display: flex;
+    right: 100px;
+  }
+
+  .profile-img{
+    width: 300px;
+  }
+
+  .about{
+    flex-direction: column;
+  }
+
+  .about-info{
+    flex-basis: 100%;
+    margin: 5px;
+    padding: 0;
+  }
+
+  .about-info p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-left: 5px;
+  }
+
+  .skill{
+    margin-top: 100px;
+    margin-left: 10px
+  }
+
+
+  .chart{
+    width: 250px;
+  }
+
+  .socials{
+    background: rgb(58, 48, 48);
+    margin-top: 20px;
+    display: flex;
+     justify-content: center;
+    margin-left: 50px; 
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+ 
+}
+
+}
